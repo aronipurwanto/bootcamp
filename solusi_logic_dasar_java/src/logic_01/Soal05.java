@@ -2,10 +2,10 @@ package logic_01;
 
 import java.util.Scanner;
 
-public class Soal04 {
+public class Soal05 {
     public static void main(String[] args) {
         // sample out
-        // 1	1	2	3	5	8	13	21	34
+        // 1	1	1	3	5	9	17	31	57
         Scanner scn = new Scanner(System.in);
         System.out.print("Masukan angka : ");
         while (scn.hasNextLong()){
@@ -14,10 +14,10 @@ public class Soal04 {
             int[] array = new int[n];
             // isi array
             for (int x=0; x<n; x++){
-                if(x < 2)
+                if(x < 3)
                     array[x] = 1;
                 else
-                    array[x] = array[x-1] + array[x-2];
+                    array[x] = array[x-1] + array[x-2]+ array[x-3];
             }
             System.out.println("Output : ");
             // tampilkan isi array
