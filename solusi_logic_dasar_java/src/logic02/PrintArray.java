@@ -14,4 +14,18 @@ public class PrintArray {
             System.out.println("\n");
         }
     }
+
+    public static void array2Dimensi(int[][] array){
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if(array[i][j] == 0){
+                    System.out.print("\t\t");
+                }else {
+                    System.out.print(array[i][j]+"\t\t");
+                }
+            }
+            // pindah baris
+            System.out.println("\n");
+        }
+    }
 }
