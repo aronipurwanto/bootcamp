@@ -23,7 +23,7 @@ public class HomeController {
     public List<Person> getPerson(){
         List<Person> personList = new ArrayList<>();
         // membuat object person
-        Person person = new Person();
+        Person person = new Person(); // instansiasi
         person.setNik(1234);
         person.setName("Hafiz");
         person.setAddress("Medan");
@@ -32,7 +32,7 @@ public class HomeController {
         //tambahkan object person ke list
         personList.add(person);
 
-        Person person2 = new Person();
+        Person person2 = new Person(); // instansiasi
         person2.setNik(1233);
         person2.setName("Todi");
         person2.setAddress("Medan");

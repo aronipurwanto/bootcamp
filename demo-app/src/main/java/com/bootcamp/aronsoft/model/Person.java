@@ -1,5 +1,6 @@
 package com.bootcamp.aronsoft.model;
 
+// encapsulation
 public class Person {
     // property
     private int nik;
