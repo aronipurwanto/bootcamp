@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -37,6 +38,20 @@ public class HomeController {
         person2.setAddress("Medan");
         person2.setGender("Pria Penyayang");
         personList.add(person2);
+
+        // menggunakan contruktor
+        Person person3 = new Person(122,"Shahal","Balikpapan","Pria");
+        personList.add(person3);
+
+        //lansung ke add
+        personList.add(new Person(1234,"Roni Purwanto","Ciamis","Pria"));
+
+        // add list banyak
+        personList.addAll(Arrays.asList(
+                new Person(1235,"Topa","Ciamis","Pria"),
+                new Person(1236,"Huzni","Ciamis","Pria"),
+                new Person(1237,"Sakinah","Ciamis","Wanita Sholehah")
+        ));
 
         return personList;
     }

@@ -7,6 +7,16 @@ public class Person {
     private String address;
     private String gender;
 
+    public Person() {
+    }
+
+    public Person(int nik, String name, String address, String gender) {
+        this.nik = nik;
+        this.name = name;
+        this.address = address;
+        this.gender = gender;
+    }
+
     // method
     public int getNik() {
         return nik;
